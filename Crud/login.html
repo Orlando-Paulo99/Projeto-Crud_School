@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_login.css">
+    <title>login</title>
+</head>
+<body>
+        <div>
+            <label for="">User</label>
+            <input id="User" type="text" placeholder="nome,email,cpf..">
+            <label for="">Password</label>
+            <input id="senha" type="text" placeholder="digite sua senha">
+            <button onclick="entrar()">Login</button>
+
+            <a href="cadastro.html">cadastre aqui</a>
+
+        </div>
+
+        <script>
+            let use=document.getElementById('User')
+            let pin=document.getElementById('senha')
+            function entrar(){
+                if(pin==="" || pin===null && use==="" || use===null){
+                    alert("preencha os campos")
+                }
+            }
+
+            
+        </script>
+
+
+    
+</body>
+</html>
